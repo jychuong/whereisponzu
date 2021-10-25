@@ -1,16 +1,20 @@
 var roomS, compSc, plantSc, plushSc, ballS, chairSc;
 var hover;
-var click1,plantC;
-var click2,compC;
+var click1, plantC;
+var click2, compC;
 var click3, plushC;
 var click4, chairC;
 var click5, ballC;
+var click6, back;
+var click7, chairC;
 var mgr;
 let canvas;
 
 function preload() {
 
   hover = loadSound("assets/hover.mp3");
+
+  back = loadImage("assets/arrow.png");
 
   roomS = loadImage("assets/room.png");
   compSc = loadImage("assets/compS.png");
@@ -23,6 +27,7 @@ function preload() {
   plantC = loadImage("assets/plant.png");
   compC = loadImage("assets/comp.png");
   plushC = loadImage("assets/plush.png");
+  chairC = loadImage("assets/chair.png");
 }
 
 

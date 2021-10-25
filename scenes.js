@@ -81,18 +81,35 @@ this.draw = function()
 ///////////////////////  2  ////////////////////////
 
 function comp() {
+  this.setup = function() {
+    click6 = new Clickable();
+      click6.image = back;
+      click6.fitImage = true;
+      click6.imageScale = 1;
+      click6.text = "";
+      click6.textsize = 0;
+      click6.locate(10, 20);
+      click6.resize(100,100);
+      click6.strokeWeight = 0;
+      click6.onHover = function () {
+        click6.imageScale = 1.1;
+        }
+      click6.onOutside = function () {
+        click6.imageScale = 1;
+      }
+       click6.onRelease = function(){
+         mgr.showScene(room);
+         hover.play();
+    }
+  }
 
     this.enter = function()  {
 
     }
 
     this.draw = function() {
-
       image(compSc,0,0,width,height);
-    }
-    this.mousePressed = function()
-    {
-        this.sceneManager.showNextScene();
+      click6.draw();
     }
 }
 
@@ -101,8 +118,26 @@ function comp() {
 function plant ()  {
 
 this.setup = function() {
-
+  click6 = new Clickable();
+    click6.image = back;
+    click6.fitImage = true;
+    click6.imageScale = 1;
+    click6.text = "";
+    click6.textsize = 0;
+    click6.locate(10, 20);
+    click6.resize(100,100);
+    click6.strokeWeight = 0;
+    click6.onHover = function () {
+      click6.imageScale = 1.1;
+      }
+    click6.onOutside = function () {
+      click6.imageScale = 1;
+    }
+     click6.onRelease = function(){
+       mgr.showScene(room);
+       hover.play();
   }
+}
 
   this.enter = function()
   {
@@ -111,21 +146,36 @@ this.setup = function() {
 
     this.draw = function()
     {
-
       image(plantSc,0,0,width,height);
+      click6.draw();
     }
-    this.mousePressed = function()
-    {
-        this.sceneManager.showNextScene();
-    }
+
 }
 
 /////////////////////////////////////4///////////////////
 
 function plush()  {
 
-this.setup = function() {
-
+  this.setup = function() {
+    click6 = new Clickable();
+      click6.image = back;
+      click6.fitImage = true;
+      click6.imageScale = 1;
+      click6.text = "";
+      click6.textsize = 0;
+      click6.locate(10, 20);
+      click6.resize(100,100);
+      click6.strokeWeight = 0;
+      click6.onHover = function () {
+        click6.imageScale = 1.1;
+        }
+      click6.onOutside = function () {
+        click6.imageScale = 1;
+      }
+       click6.onRelease = function(){
+         mgr.showScene(room);
+         hover.play();
+    }
   }
 
   this.enter = function()
@@ -135,14 +185,11 @@ this.setup = function() {
 
     this.draw = function()
     {
-
       image(plushSc,0,0,width,height);
+      click6.draw();
     }
-    this.mousePressed = function()
-    {
-        this.sceneManager.showNextScene();
-    }
-}
+  }
+
 
 /////////////////////////////////////4///////////////////
 
