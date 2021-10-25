@@ -1,5 +1,5 @@
 
-function intro()  {
+function room()  {
 
     this.enter = function()  {
     }
@@ -19,16 +19,15 @@ this.draw = function()
 
 ///////////////////////  2  ////////////////////////
 
-function scene2() {
+function comp() {
 
     this.enter = function()  {
-
 
     }
 
     this.draw = function() {
       background(0,0,255);
-      image(compS,0,0,width,height);
+      image(compSc,0,0,width,height);
     }
     this.mousePressed = function()
     {
@@ -38,7 +37,7 @@ function scene2() {
 
 ////////////////////////////// 3 /////////////////
 
-function scene3()  {
+function plant ()  {
 
 this.setup = function() {
 
@@ -52,7 +51,31 @@ this.setup = function() {
     this.draw = function()
     {
       background(0);
-      image(plantS,0,0,width,height);
+      image(plantSc,0,0,width,height);
+    }
+    this.mousePressed = function()
+    {
+        this.sceneManager.showNextScene();
+    }
+}
+
+/////////////////////////////////////4///////////////////
+
+function plush()  {
+
+this.setup = function() {
+
+  }
+
+  this.enter = function()
+  {
+
+  }
+
+    this.draw = function()
+    {
+      background(0);
+      image(plushSc,0,0,width,height);
     }
     this.mousePressed = function()
     {

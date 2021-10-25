@@ -1,32 +1,32 @@
-var roomS, compS, plantS, plushS, ballS, chairS;
+var roomS, compSc, plantSc, plushSc, ballS, chairSc;
 var hover;
-var click1,plant;
+var click1,plantC;
+var mgr;
 
 function preload() {
 
   // snd1 = loadSound("assets/bgm.mp3");
 
   roomS = loadImage("assets/room.png");
-  compS = loadImage("assets/compS.png");
-  plantS = loadImage("assets/plantS.png");
-  plushS = loadImage("assets/plushS.png");
-  chairS = loadImage("assets/chairS.png");
+  compSc = loadImage("assets/compS.png");
+  plantSc = loadImage("assets/plantS.png");
+  plushSc = loadImage("assets/plushS.png");
+  chairSc = loadImage("assets/chairS.png");
+  plushSc = loadImage("assets/plushS.png");
 
-  plant = loadImage("assets/plant.png");
+  plantC = loadImage("assets/plant.png");
 }
 
-var mgr;
 
 function setup() {
     createCanvas(1200,668);
-     mgr = new SceneManager();
+    mgr = new SceneManager();
 
-    mgr.addScene (intro);
-    mgr.addScene (scene2);
-    mgr.addScene (scene3);
+    mgr.addScene (room);
+    mgr.addScene (comp);
+    mgr.addScene (plant);
+    mgr.addScene (plush);
     mgr.showNextScene();
-
-
 
 }
 
