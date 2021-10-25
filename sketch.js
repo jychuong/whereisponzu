@@ -23,12 +23,6 @@ function setup(){
 
   mgr.showNextScene();
 
-  plant = new Clickable();
-  plant.image = b1;
-  b1 = locate(100,100);
-
-
-
 
 }
 

@@ -1,18 +1,20 @@
 
 function start() {
   this.setup = function() {
-
+    plant = new Clickable();
+    plant.image = b1;
+    b1.locate (100,100);
 }
   this.draw = function() {
-    background(0,0,15);
+    background(0,0,255);
     image(roomS,0,0,width,height);
+    plant.draw();
   }
 
-  this.mousePressed = function()
-  {
-
-  this.sceneManager.showScene(compS);
-  }
+  this.keyPressed = function() {
+       // switch the scene
+       this.sceneManager.showScene( compS );
+   }
 }
 
 function compS (){
