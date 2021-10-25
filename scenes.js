@@ -1,47 +1,63 @@
 
-function start() {
-  this.setup = function() {
-    plant = new Clickable();
-    plant.image = b1;
-    b1.locate (100,100);
+function intro()  {
 
+    this.enter = function()  {
+    }
+
+this.draw = function()
+    {
+       background(0,0,255);
+       image(roomS,0,0,width,height);
+       // plantC.draw();
+    }
+
+    this.mousePressed = function()
+    {
+        this.sceneManager.showNextScene();
+    }
 }
-  this.draw = function() {
-    background(0,0,255);
-    image(roomS,0,0,width,height);
-    plant.draw();
+
+///////////////////////  2  ////////////////////////
+
+function scene2() {
+
+    this.enter = function()  {
+
+
+    }
+
+    this.draw = function() {
+      background(0,0,255);
+      image(compS,0,0,width,height);
+    }
+    this.mousePressed = function()
+    {
+        this.sceneManager.showNextScene();
+    }
+}
+
+////////////////////////////// 3 /////////////////
+
+function scene3()  {
+
+this.setup = function() {
+
   }
 
-  this.keyPressed = function() {
-       // switch the scene
-       this.sceneManager.showScene( compS );
-   }
+  this.enter = function()
+  {
+
+  }
+
+    this.draw = function()
+    {
+      background(0);
+      image(plantS,0,0,width,height);
+    }
+    this.mousePressed = function()
+    {
+        this.sceneManager.showNextScene();
+    }
 }
 
-// function compS (){
-//   this.setup = function() {
-// }
-//   this.draw = function (){
-//     background(0,0,255);
-//     image(compS,0,0,width,height);
-//   }
-//   this.mousePressed = function()
-//   {
-//
-//   this.sceneManager.showScene(plantS);
-//   }
-// }
-//
-// function plantS (){
-//   this.setup = function() {
-// }
-//   this.draw = function (){
-//     background(0,0,255);
-//     image(plantS,0,0,width,height);
-//   }
-//   this.mousePressed = function()
-//   {
-//
-//   this.sceneManager.showScene(start);
-//   }
-// }
+/////////////////////////////////////4///////////////////
