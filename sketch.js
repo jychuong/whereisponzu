@@ -1,5 +1,5 @@
 
-var room, compS, plantS, plushS, ballS, chairS;
+var roomS, compS, plantS, plushS, ballS, chairS;
 var plant,b1;
 
 function preload() {
@@ -16,10 +16,10 @@ var mgr;
 
 function setup(){
   createCanvas(1000,1000);
-  mgr = new sceneManager();
+  mgr = new SceneManager();
   mgr.addScene (start);
-  mgr.addScene (compS);
-  mgr.addScene (plantS);
+  // mgr.addScene (compS);
+  // mgr.addScene (plantS);
 
   mgr.showNextScene();
 
