@@ -53,7 +53,7 @@ function preload() {
 
 
 function setup() {
-    canvas = createCanvas(1500,1000);
+    canvas = createCanvas(1400,900);
     canvas.parent('sketch1');
     mgr = new SceneManager();
 

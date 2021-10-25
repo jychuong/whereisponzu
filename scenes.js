@@ -6,7 +6,7 @@ function start(){
       clickS.image = startBut;
       clickS.fitImage = true;
       clickS.imageScale = 1;
-      clickS.locate(65, 600);
+      clickS.locate(65, 550);
       clickS.resize(500,500);
       clickS.onHover = function () {
         clickS.imageScale = 1.05;
@@ -36,7 +36,7 @@ function room()  {
       click1.image = plantC;
       click1.fitImage = true;
       click1.imageScale = 1;
-      click1.locate(65, 235);
+      click1.locate(60, 135);
       click1.resize(300,500);
       click1.onHover = function () {
         click1.imageScale = 1.05;
@@ -54,7 +54,7 @@ function room()  {
          click2.fitImage = true;
          click2.imageScale = 1;
          click2.text = "";
-         click2.locate(735, 103);
+         click2.locate(680, 70);
          click2.resize(260,360);
          click2.strokeWeight = 0;
          click2.onHover = function () {
@@ -73,7 +73,7 @@ function room()  {
             click3.fitImage = true;
             click3.imageScale = 1;
             click3.text = "";
-            click3.locate(800, 300);
+            click3.locate(750, 250);
             click3.resize(500,380);
             click3.strokeWeight = 0;
             click3.color = "clear";
@@ -92,8 +92,8 @@ function room()  {
                click7.image = chairC;
                click7.fitImage = true;
                click7.imageScale = 1;
-               click7.locate(340, 180);
-               click7.resize(427,650);
+               click7.locate(300, 150);
+               click7.resize(427,580);
                click7.strokeWeight = 0;
                click7.onHover = function () {
                  click7.imageScale = 1.02;
@@ -110,8 +110,8 @@ function room()  {
                   click8.fitImage = true;
                   click8.imageScale = 1;
                   click8.text = "";
-                  click8.locate(120, 680);
-                  click8.resize(280,380);
+                  click8.locate(150, 610);
+                  click8.resize(230,330);
                   click8.strokeWeight = 0;
                   click8.color = "clear";
                   click8.onHover = function () {
