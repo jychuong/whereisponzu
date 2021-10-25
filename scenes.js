@@ -1,31 +1,44 @@
-function menu() {
-  this.setup = function() {
-}
-  this.draw = function(){
 
+function start() {
+  this.setup = function() {
+
+}
+  this.draw = function() {
+    background(0,0,15);
+    image(roomS,0,0,width,height);
+  }
+
+  this.mousePressed = function()
+  {
+
+  this.sceneManager.showScene(compS);
   }
 }
 
-function room1 (){
+function compS (){
   this.setup = function() {
 }
   this.draw = function (){
+    background(0,0,255);
+    image(compS,0,0,width,height);
+  }
+  this.mousePressed = function()
+  {
 
+  this.sceneManager.showScene(plantS);
   }
 }
 
-function room2 (){
+function plantS (){
   this.setup = function() {
 }
   this.draw = function (){
-
+    background(0,0,255);
+    image(plantS,0,0,width,height);
   }
-}
+  this.mousePressed = function()
+  {
 
-function done (){
-  this.setup = function() {
-}
-  this.draw = function (){
-
+  this.sceneManager.showScene(start);
   }
 }
